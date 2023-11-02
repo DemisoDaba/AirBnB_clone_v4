@@ -139,13 +139,13 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) all MyModel
 ** class doesn't exist **
 (hbnb) create BaseModel
-7da56403-cc45-4f1c-ad32-bfafeb2bb050
+f15e12c0-0425-4251-b4cf-af190f6a6247
 (hbnb) all BaseModel
-[[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}]
-(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}
-(hbnb) destroy BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
+[[BaseModel] (f15e12c0-0425-4251-b4cf-af190f6a6247) {'updated_at': datetime.datetime(2023, 11, 2, 5, 31, 14, 132802), 'created_at': datetime.datetime(2023, 11, 2, 5, 31, 14, 132770), 'id': 'f15e12c0-0425-4251-b4cf-af190f6a6247'}]
+(hbnb) show BaseModel f15e12c0-0425-4251-b4cf-af190f6a6247
+[BaseModel] (f15e12c0-0425-4251-b4cf-af190f6a6247) {'updated_at': datetime.datetime(2023, 11, 2, 5, 31, 14, 132802), 'created_at': datetime.datetime(2023, 11, 2, 5, 31, 14, 132770), 'id': 'f15e12c0-0425-4251-b4cf-af190f6a6247'}
+(hbnb) destroy BaseModel f15e12c0-0425-4251-b4cf-af190f6a6247
+(hbnb) show BaseModel f15e12c0-0425-4251-b4cf-af190f6a6247
 ** no instance found **
 (hbnb) quit
 ```
