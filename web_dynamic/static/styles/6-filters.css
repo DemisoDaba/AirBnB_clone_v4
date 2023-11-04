@@ -52,6 +52,7 @@ button:hover {
 }
 
 .popover {
+    z-index: 10;
     visibility: hidden;
     width: 100%;
     border: 1px solid #DDDDDD;
