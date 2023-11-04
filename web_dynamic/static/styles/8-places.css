@@ -22,6 +22,7 @@
 }
 
 .places article {
+    position: relative;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     display: inline-block;
@@ -33,6 +34,7 @@
     border-radius: 4px;
 }
 .places h2 {
+    padding-right: 60px;
     font-size: 30px;
     text-align: center;
     margin-top: 0;
@@ -50,6 +52,9 @@
     word-wrap: break-word;
 }
 .price_by_night {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     display: flex;
     height: 60px;
     min-width: 60px;
@@ -81,6 +86,10 @@
     height: 65px;
 }
 
+.information p {
+    transform: translateY(10px);
+}
+
 .information .max_guest {
     background: url("../images/icon_group.png") no-repeat top center;
     width: 100px;
@@ -91,6 +100,7 @@
     width: 100px;
 }
 
+
 .information .number_bathrooms {
     background: url("../images/icon_bath.png") no-repeat top center;
     width: 100px;
@@ -98,4 +108,16 @@
 
 .user {
   margin-bottom: 1.5%;
+}
+
+.revBtn {
+    padding: 4px 8px;
+    font-size: 15px;
+    border: 1px solid red;
+    border-radius: 15px;   
+    cursor: pointer;
+}
+.revBtn:hover {
+    background-color: red;
+    color: white;
 }
