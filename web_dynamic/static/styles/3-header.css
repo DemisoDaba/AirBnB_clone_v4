@@ -1,11 +1,16 @@
-header {
+footer {
+    position: fixed;
     background: white;
-    height: 70px;
+    height: 60px;
     width: 100%;
-    border-bottom: 1px solid #CCCCCC;
+    bottom: 0;
+    border-top: 1px solid #CCCCCC;
 }
-header .logo {
-    background: url("../images/logo.png") no-repeat;
-    left: 20px;
-    height: 100%;
+footer p {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
