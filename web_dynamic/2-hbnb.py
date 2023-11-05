@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Starts a Flash Web Application """
+""" Flask App that integrates with AirBnB static HTML Template """
 import uuid
 from models import storage
 from models.state import State
@@ -9,8 +9,9 @@ from models.place import Place
 from os import environ
 from flask import Flask, render_template
 app = Flask(__name__)
-# app.jinja_env.trim_blocks = True
-# app.jinja_env.lstrip_blocks = True
+app.url_map.strict_slashes = False
+port = 5000
+host = '0.0.0.0'
 
 
 @app.teardown_appcontext
@@ -19,7 +20,7 @@ def close_db(error):
     storage.close()
 
 
-@app.route('/2-hbnb', strict_slashes=False)
+@app.route('/2-hbnb')
 def hbnb():
     """ HBNB is alive! """
     states = storage.all(State).values()
@@ -45,4 +46,4 @@ def hbnb():
 
 if __name__ == "__main__":
     """ Main Function """
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host=host, port=port)
